@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipos</title>
+    <link rel="stylesheet" href="CSS/styleequipo.css">
+    <script src="JS/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navegador">
+            <div class="infos">
+                <img src="Images/logo.png" alt="">
+            </div>
+            <ul class="info">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="anfitriones.html">Anfitriones</a></li>
+                <li><a href="estadios.html">Estadios</a></li>
+                <li><a href="">Tablas</a>
+                    <ul class="submenu">
+                        <li><a href="tablagrupos.html">Tablas de Grupos</a></li>
+                        <li><a href="">Tabla de posiciones</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Calendario de partidos</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section class="mid">
+        <div class="contenedorgen">
+
+            <div class="selector">
+                <h2>Equipos Clasificados</h2>
+                <ul class="tipos">
+                    <li><button class="btn active" onclick="mostrarTodos(this)">TODOS</button></li>
+                    <li><button class="btn" onclick="filtrarGrupo('B', this)">CONCACAF</button></li>
+                    <li><button class="btn" onclick="filtrarGrupo('C', this)">UEFA</button></li>
+                    <li><button class="btn" onclick="filtrarGrupo('A', this)">CONMEBOL</button></li>
+                    <li><button class="btn" onclick="filtrarGrupo('D',this)">CAF</button></li>
+                    <li><button class="btn" onclick="filtrarGrupo('E',this)">AFC</button></li>
+                    <li><button class="btn" onclick="filtrarGrupo('F',this)">OFC</button></li>
+                </ul>
+
+            </div>
+
+            <div class="conmebol" data-grupo="A">
+                <div class="contenedor">
+                    <div class="titulocla">
+
+                        <div class="maqueta ">
+                            <h3 id="CONMEBOL">CONMEBOL</h3>
+
+                        </div>
+                    </div>
+                    <div class="equipos">
+                        <div class="equipo">
+                            <div class="img">
+                                <img src="images/banderas/banderacolombia.jfif" alt="">
+                                <div class="pais">
+                                    <h1>Colombia</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo K</div>
+                                    <div class="infor2">14</div>
+                                    <div class="infor2">6</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="equipo">
+                            <div class="img2">
+                                <img src="images/banderas/banderabrasil.jpg" alt="">
+                                <div class="pais">
+                                    <h1>Brasil</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo C</div>
+                                    <div class="infor2">5</div>
+                                    <div class="infor2">22</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="equipo">
+                            <div class="img3">
+                                <img src="images/banderas/banderaargentina.jpg" alt="">
+                                <div class="pais">
+                                    <h1>Argentina</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo J</div>
+                                    <div class="infor2">2</div>
+                                    <div class="infor2">18</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="equipo">
+
+                            <div class="img4">
+                                <img src="images/banderas/banderaecuador.jpg" alt="">
+                                <div class="pais">
+                                    <h1>Ecuador</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo E</div>
+                                    <div class="infor2">23</div>
+                                    <div class="infor2">3</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="equipo">
+
+                            <div class="img5">
+                                <img src="images/banderas/banderaparaguay.jpg" alt="">
+                                <div class="pais">
+                                    <h1>Paraguay</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo D</div>
+                                    <div class="infor2">40</div>
+                                    <div class="infor2">8</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="equipo">
+
+                            <div class="img6">
+                                <img src="images/banderas/banderauru.avif" alt="">
+                                <div class="pais">
+                                    <h1>Uruguay</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo H</div>
+                                    <div class="infor2">17</div>
+                                    <div class="infor2">14</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="conmebol" data-grupo="B">
+                <div class="contenedor">
+                    <div class="titulocla">
+
+                        <div class="maqueta ">
+                            <h3 id="CONMEBOL">CONCACAF</h3>
+                        </div>
+                    </div>
+                    <div class="equipos">
+                        <div class="equipo">
+                            <div class="img7">
+                                <img src="images/banderas/banderacanada.jpg" alt="">
+                                <div class="pais">
+                                    <h1>Canadá</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo B</div>
+                                    <div class="infor2">29</div>
+                                    <div class="infor2">2</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="equipo">
+                            <div class="img8">
+                                <img src="images/banderas/banderaestadosunidos.avif" alt="">
+                                <div class="pais">
+                                    <h1>EE. UU.</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo D</div>
+                                    <div class="infor2">15</div>
+                                    <div class="infor2">11</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="equipo">
+                            <div class="img9">
+                                <img src="images/banderas/banderamexico.avif" alt="">
+                                <div class="pais">
+                                    <h1>México</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo A</div>
+                                    <div class="infor2">16</div>
+                                    <div class="infor2">17</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="equipo">
+
+                            <div class="img10">
+                                <img src="images/banderas/banderacurazao.jpg" alt="">
+                                <div class="pais">
+                                    <h1>Curazao</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo E</div>
+                                    <div class="infor2">81</div>
+                                    <div class="infor2">0</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="equipo">
+
+                            <div class="img11">
+                                <img src="images/banderas/banderahaiti.jpg" alt="">
+                                <div class="pais">
+                                    <h1>Haití</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo C</div>
+                                    <div class="infor2">83</div>
+                                    <div class="infor2">1</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="equipo">
+
+                            <div class="img12">
+                                <img src="images/banderas/banderapanama.jpg" alt="">
+                                <div class="pais">
+                                    <h1>Panamá</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo L</div>
+                                    <div class="infor2">33</div>
+                                    <div class="infor2">1</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="conmebol" data-grupo="D">
+                <div class="contenedor">
+                    <div class="titulocla">
+                        <div class="maqueta ">
+                            <h3>CAF</h3>
+                        </div>
+                    </div>
+                    <div class="equipos">
+                        <div class="equipo">
+                            <div class="img13">
+                                <img src="images/banderas/banderaargelia.jpg" alt="">
+                                <div class="pais">
+                                    <h1>Argelia</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo J</div>
+                                    <div class="infor2">28</div>
+                                    <div class="infor2">4</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="equipo">
+                            <div class="img14">
+                                <img src="images/banderas/banderacostademarfil.jpg" alt="">
+                                <div class="pais">
+                                    <h1>Costa de Marfil</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo E</div>
+                                    <div class="infor2">37</div>
+                                    <div class="infor2">3</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="equipo">
+                            <div class="img15">
+                                <img src="images/banderas/banderaegipto.avif" alt="">
+                                <div class="pais">
+                                    <h1>Egipto</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo G</div>
+                                    <div class="infor2">31</div>
+                                    <div class="infor2">3</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="equipo">
+
+                            <div class="img16">
+                                <img src="images/banderas/banderaghana.avif" alt="">
+                                <div class="pais">
+                                    <h1>Ghana</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo L</div>
+                                    <div class="infor2">72</div>
+                                    <div class="infor2">4</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="equipo">
+
+                            <div class="img17">
+                                <img src="images/banderas/banderaisladecaboverde.avif" alt="">
+                                <div class="pais">
+                                    <h1>Islas de Cabo Verde</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo H</div>
+                                    <div class="infor2">67</div>
+                                    <div class="infor2">0</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="equipo">
+
+                            <div class="img12">
+                                <img src="images/banderas/banderamarruecos.jpg" alt="">
+                                <div class="pais">
+                                    <h1>Marruecos</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo C</div>
+                                    <div class="infor2">8</div>
+                                    <div class="infor2">6</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="equipo">
+
+                            <div class="img18">
+                                <img src="images/banderas/banderasenegal.jpg" alt="">
+                                <div class="pais">
+                                    <h1>Senegal</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo I</div>
+                                    <div class="infor2">12</div>
+                                    <div class="infor2">3</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="equipo">
+
+                            <div class="img16">
+                                <img src="images/banderas/banderasudafrica.avif" alt="">
+                                <div class="pais">
+                                    <h1>Sudáfrica</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo A</div>
+                                    <div class="infor2">60</div>
+                                    <div class="infor2">3</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="equipo">
+
+                            <div class="img19">
+                                <img src="images/banderas/banderatunez.avif" alt="">
+                                <div class="pais">
+                                    <h1>Túnez</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo C</div>
+                                    <div class="infor2">8</div>
+                                    <div class="infor2">6</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="conmebol" data-grupo="E">
+                <div class="contenedor">
+                    <div class="titulocla">
+                        <h3 id="AFC">AFC</h3>
+                    </div>
+                    <div class="equipos">
+                        <div class="equipo">
+                            <div class="img13">
+                                <img src="images/banderas/banderaarabiasaudi.jpg" alt="">
+                                <div class="pais">
+                                    <h1>Arabia Saudi</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo H</div>
+                                    <div class="infor2">61</div>
+                                    <div class="infor2">6</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="equipo">
+                            <div class="img4">
+                                <img src="images/banderas/banderaaustralia.avif" alt="">
+                                <div class="pais">
+                                    <h1>Australia</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo D</div>
+                                    <div class="infor2">27</div>
+                                    <div class="infor2">6</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="equipo">
+                            <div class="img20">
+                                <img src="images/banderas/banderacatar.jpg" alt="">
+                                <div class="pais">
+                                    <h1>Catar</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo B</div>
+                                    <div class="infor2">56</div>
+                                    <div class="infor2">1</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="equipo">
+
+                            <div class="img17">
+                                <img src="images/banderas/banderajapon.jpg" alt="">
+                                <div class="pais">
+                                    <h1>Japón</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo F</div>
+                                    <div class="infor2">19</div>
+                                    <div class="infor2">7</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="equipo">
+
+                            <div class="img5">
+                                <img src="images/banderas/banderairan.jpg" alt="">
+                                <div class="pais">
+                                    <h1>Irán</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo G</div>
+                                    <div class="infor2">20</div>
+                                    <div class="infor2">6</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="equipo">
+
+                            <div class="img21">
+                                <img src="images/banderas/banderajordania.avif" alt="">
+                                <div class="pais">
+                                    <h1>Jordania</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo J</div>
+                                    <div class="infor2">64</div>
+                                    <div class="infor2">0</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="equipo">
+
+                            <div class="img22">
+                                <img src="images/banderas/banderakoreasur.jpg" alt="">
+                                <div class="pais">
+                                    <h1>República de Corea</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo A</div>
+                                    <div class="infor2">22</div>
+                                    <div class="infor2">10</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="equipo">
+
+                            <div class="img17">
+                                <img src="images/banderas/estadiouzbequistan.jpg" alt="">
+                                <div class="pais">
+                                    <h1>Uzbekistán</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo k</div>
+                                    <div class="infor2">52</div>
+                                    <div class="infor2">0</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="conmebol" data-grupo="C">
+                <div class="contenedor">
+                    <div class="titulocla">
+                        <h3 id="UEFA">UEFA</h3>
+                    </div>
+                    <div class="equipos">
+                        <div class="equipo">
+                            <div class="img23">
+                                <img src="images/banderas/banderaalemania.jpg" alt="">
+                                <div class="pais">
+                                    <h1>Alemania</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo E</div>
+                                    <div class="infor2">10</div>
+                                    <div class="infor2">10</div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="equipo">
+                            <div class="img24">
+                                <img src="images/banderas/banderaaustria.jpg" alt="">
+                                <div class="pais">
+                                    <h1>Austria</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo J</div>
+                                    <div class="infor2">24</div>
+                                    <div class="infor2">7</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="equipo">
+                            <div class="img20">
+                                <img src="images/banderas/banderabelgica.jpg" alt="">
+                                <div class="pais">
+                                    <h1>Bélgica</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo G</div>
+                                    <div class="infor2">9</div>
+                                    <div class="infor2">13</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="equipo">
+
+                            <div class="img5">
+                                <img src="images/banderas/banderacroacia.jpg" alt="">
+                                <div class="pais">
+                                    <h1>Croacia</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo L</div>
+                                    <div class="infor2">11</div>
+                                    <div class="infor2">6</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="equipo">
+
+                            <div class="img8">
+                                <img src="images/banderas/banderaescocia.jfif" alt="">
+                                <div class="pais">
+                                    <h1>Escocia</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo C</div>
+                                    <div class="infor2">38</div>
+                                    <div class="infor2">7</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="equipo">
+
+                            <div class="img25">
+                                <img src="images/banderas/banderaespaña.avif" alt="">
+                                <div class="pais">
+                                    <h1>España</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo H</div>
+                                    <div class="infor2">1</div>
+                                    <div class="infor2">16</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="equipo">
+
+                            <div class="img17">
+                                <img src="images/banderas/banderafrancia.jpg" alt="">
+                                <div class="pais">
+                                    <h1>Francia</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo A</div>
+                                    <div class="infor2">22</div>
+                                    <div class="infor2">10</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="equipo">
+
+                            <div class="img26">
+                                <img src="images/banderas/banderainglaterra.jpg" alt="">
+                                <div class="pais">
+                                    <h1>Inglaterra</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo L</div>
+                                    <div class="infor2">4</div>
+                                    <div class="infor2">16</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="equipo">
+
+                            <div class="img27">
+                                <img src="images/banderas/banderanoruega.jpg" alt="">
+                                <div class="pais">
+                                    <h1>Noruega</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo I</div>
+                                    <div class="infor2">32</div>
+                                    <div class="infor2">3</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="equipo">
+
+                            <div class="img28">
+                                <img src="images/banderas/banderapaisesbajos.jpg" alt="">
+                                <div class="pais">
+                                    <h1>Países Bajos</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo F</div>
+                                    <div class="infor2">7</div>
+                                    <div class="infor2">10</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="equipo">
+
+                            <div class="img25">
+                                <img src="images/banderas/banderaportugal.jpg" alt="">
+                                <div class="pais">
+                                    <h1>Portugal</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo k</div>
+                                    <div class="infor2">6</div>
+                                    <div class="infor2">8</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="equipo">
+
+                            <div class="img19">
+                                <img src="images/banderas/banderasuiza.jpg" alt="">
+                                <div class="pais">
+                                    <h1>Suiza</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo B</div>
+                                    <div class="infor2">18</div>
+                                    <div class="infor2">12</div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="conmebol" data-grupo="F">
+                <div class="contenedor">
+                    <div class="titulocla">
+                        <h3 id="OFC">OFC</h3>
+                    </div>
+                    <div class="equipos">
+                        <div class="equipo">
+                            <div class="img23">
+                                <img src="images/banderas/banderanuevazelanda.jpg" alt="">
+                                <div class="pais">
+                                    <h1>Nueva Zelanda</h1>
+                                </div>
+                            </div>
+                            <div class="conteneinfo">
+                                <div class="informa">
+                                    <div class="infor">Fase</div>
+                                    <div class="infor">Clasificación mundial</div>
+                                    <div class="infor">Participaciones</div>
+                                </div>
+                                <div class="informa2">
+                                    <div class="infor2">Grupo G</div>
+                                    <div class="infor2">85</div>
+                                    <div class="infor2">2</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>

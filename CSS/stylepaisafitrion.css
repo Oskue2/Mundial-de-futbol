@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: black
+}
+
+/* navegador */
+.navegador {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(20, 23, 31, 0.95);
+    align-items: center;
+    width: 100%;
+    z-index: 10;
+    padding: 5px 40px;
+    position: fixed;
+
+}
+
+.navegador img {
+    background-position: center;
+    background-size: cover;
+    width: 150px;
+}
+
+nav h2 {
+    color: aliceblue;
+}
+
+.info {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+
+}
+
+.info a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.3s ease;
+    display: block;
+}
+
+.infos {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background: rgba(15, 23, 42, 0.95);
+    top: 100%;
+    list-style: none;
+    padding: 20px 40px;
+}
+
+.submenu li {
+    border-bottom: 1px solid white;
+}
+
+.info li:hover .submenu {
+    display: block;
+}
+
+.info {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.info li {
+    position: relative;
+}
+
+.info a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.3s ease;
+    display: block;
+}
+
+.info a:hover {
+    color: #14213d;
+
+}
+
+/*mid*/
+.mid {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.titulo {
+    text-align: center;
+    color: aliceblue;
+    
+}
+
+.estadios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 70px;
+    gap: 20px;
+}
+
+.estadio {
+    width: 800px;
+    height: 560px;
+    background: linear-gradient(0deg, #0b0f1a, #05070d);
+    padding: 20px 10px 10px 10px;
+    border-radius: 20px;
+}
+
+.estadio2 {
+    width: 700px;
+    height: 400px;
+    background: linear-gradient(0deg, #0b0f1a, #05070d);
+    padding: 20px 10px 10px 10px;
+    border-radius: 10px;
+}
+
+.estadio3 {
+    width: 700px;
+    height: 330px;
+    background: linear-gradient(0deg, #0b0f1a, #05070d);
+    padding: 20px 10px 10px 10px;
+    border-radius: 10px;
+}
+
+.estadio4 {
+    width: 700px;
+    height: 430px;
+    background: linear-gradient(0deg, #0b0f1a, #05070d);
+    padding: 20px 10px 10px 10px;
+    border-radius: 20px;
+}
+
+.estadio img {
+    width: 700px;
+    height: 400px;
+    margin-top: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.informacion {
+    margin-top: 10px;
+}
+
+.informacions{
+    text-align: left;
+    margin-top: 20px;
+}
+
+.informacions h3{
+    text-align: center;
+}
+
+/*footer*/
+.bot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.gen {
+    width: 98%;
+    height: 90%;
+    border-radius: 10px;
+    background: linear-gradient(0deg, #0b0f1a, #05070d);
+    border: 1px #222725 solid;
+}   
+
+.titulo {
+    color: aliceblue;
+    font-size: 16px;
+    padding: 70px 20px 10px 20px;
+    text-align: center;
+
+}
+
+.titulobot{
+    color: aliceblue;
+    padding: 20px 0px 5px 30px;
+}
+
+
+
+.programacion{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px;
+    gap: 15px;
+
+}
+
+.encuentros{
+    color: black;
+    text-align: center;
+    background: url("../images/banderas/banderatoronto.avif") center/cover no-repeat;
+    padding: 10px;
+    width: 32%;
+    height: 80%;
+    transition: 0.3s;
+    border-radius: 5px;
+    
+}
+
+.encuentros:hover{
+    transform: translateY(-5px);
+}
+
+.encuentros2{
+    color: black;
+    text-align: center;
+    background: url("../images/banderas/banderavancouver.jpg") center/cover no-repeat;
+    padding: 10px;
+    width: 32%;
+    height: 80%;
+    transition: 0.3s;
+    border-radius: 5px;
+    
+}
+
+.encuentros2:hover{
+    transform: translateY(-5px);
+}
+
+.encuentro{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.encuentro img{
+    width: 40px;
+    height: 26px;
+    display: flex;
+}
+
+.encuentroinfo{
+    padding: 10px;
+}
+
+.foot{
+    background: linear-gradient(0deg, #0b0f1a, #05070d);
+    height: 10vh;
+    display: flex;
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+}
+
+.derechos{
+    text-align: center;
+}

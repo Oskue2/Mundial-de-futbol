@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadios</title>
+    <link rel="stylesheet" href="CSS/styletablagrupos.css">
+    <script src="JS/tablagrups.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navegador">
+            <div class="infos">
+                <img src="Images/logo.png" alt="">
+                <H2>FIFA WORLD CUP 26</H2>
+            </div>
+            <ul class="info">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="anfitriones.html">Anfitriones</a></li>
+                <li><a href="equipos.html">Equipos</a></li>
+                <li><a href="">Tabla de posiciones</a></li>
+                <li><a href="">Calendario de partidos</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section class="mid">
+
+        <div class="titulo">
+            <h1>TABLA DE GRUPOS</h1>
+            <ul class="tipos">
+                <li><button class="btn active" onclick="mostrarTodos(this)">TODOS</button></li>
+                <li><button class="btn" onclick="filtrarGrupo('A', this)">GRUPO A</button></li>
+                <li><button class="btn" onclick="filtrarGrupo('B', this)">GRUPO B</button></li>
+                <li><button class="btn" onclick="filtrarGrupo('C', this)">GRUPO C</button></li>
+                <li><button class="btn" onclick="filtrarGrupo('D', this)">GRUPO D</button></li>
+                <li><button class="btn" onclick="filtrarGrupo('E', this)">GRUPO E</button></li>
+                <li><button class="btn" onclick="filtrarGrupo('F', this)">GRUPO F</button></li>
+                <li><button class="btn" onclick="filtrarGrupo('G', this)">GRUPO G</button></li>
+                <li><button class="btn" onclick="filtrarGrupo('H', this)">GRUPO H</button></li>
+                <li><button class="btn" onclick="filtrarGrupo('I', this)">GRUPO I</button></li>
+                <li><button class="btn" onclick="filtrarGrupo('J', this)">GRUPO J</button></li>
+                <li><button class="btn" onclick="filtrarGrupo('K', this)">GRUPO K</button></li>
+                <li><button class="btn" onclick="filtrarGrupo('L', this)">GRUPO L</button></li>
+
+            </ul>
+            <div class="estadios">
+                <div class="estadio" data-grupo="A">
+                    <div class="contenegrupos">
+                        <h2>Grupo A</h2>
+                        <table class="Tablapos">
+
+                            <tr>
+                                <th>GRUPO A</th>
+                                <th>PJ</th>
+                                <th>PG</th>
+                                <th>PE</th>
+                                <th>PP</th>
+                                <th>PTS</th>
+                            </tr>
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderamexico.avif" alt="">
+                                    México</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderasudafrica.avif" alt="">
+                                    Sudáfrica</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderakoreasur.jpg" alt="">
+                                    Corea del Sur</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderablanca.avif" alt="">
+                                    Por determinar</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+
+                <div class="estadio" data-grupo="B">
+                    <div class="contenegrupos">
+                        <h2>Grupo B</h2>
+                        <table class="Tablapos">
+
+                            <tr>
+                                <th>GRUPO B</th>
+                                <th>PJ</th>
+                                <th>PG</th>
+                                <th>PE</th>
+                                <th>PP</th>
+                                <th>PTS</th>
+                            </tr>
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderacanada.jpg" alt="">
+                                    Canadá</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderacatar.jpg" alt="">
+                                    Catar</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderasuiza.jpg" alt="">
+                                    Suiza</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderablanca.avif" alt="">
+                                    Por determinar</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+
+                <div class="estadio" data-grupo="C">
+                    <div class="contenegrupos">
+                        <h2>Grupo C</h2>
+                        <table class="Tablapos">
+
+                            <tr>
+                                <th>GRUPO C</th>
+                                <th>PJ</th>
+                                <th>PG</th>
+                                <th>PE</th>
+                                <th>PP</th>
+                                <th>PTS</th>
+                            </tr>
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderabrasil.jpg" alt="">
+                                    Brasil</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderamarruecos.jpg" alt="">
+                                    Marruecos</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderahaiti.jpg   " alt="">
+                                    Haití</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderaescocia.jfif" alt="">
+                                    Escocia</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+
+                <div class="estadio" data-grupo="D">
+                    <div class="contenegrupos">
+                        <h2>Grupo D</h2>
+                        <table class="Tablapos">
+
+                            <tr>
+                                <th>GRUPO D</th>
+                                <th>PJ</th>
+                                <th>PG</th>
+                                <th>PE</th>
+                                <th>PP</th>
+                                <th>PTS</th>
+                            </tr>
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderaestadosunidos.avif" alt="">
+                                    EE. UU.</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderaparaguay.jpg" alt="">
+                                    Paraguay</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderaaustralia.avif" alt="">
+                                    Australia</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderablanca.avif" alt="">
+                                    Por determinar</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+
+                <div class="estadio" data-grupo="E">
+                    <div class="contenegrupos">
+                        <h2>Grupo E</h2>
+                        <table class="Tablapos">
+
+                            <tr>
+                                <th>GRUPO E</th>
+                                <th>PJ</th>
+                                <th>PG</th>
+                                <th>PE</th>
+                                <th>PP</th>
+                                <th>PTS</th>
+                            </tr>
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderaalemania.jpg" alt="">
+                                    Alemania</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderacurazao.jpg" alt="">
+                                    Curazao</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderacostademarfil.jpg" alt="">
+                                    Costa de Marfil</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderaecuador.jpg" alt="">
+                                    Ecuador</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+
+                <div class="estadio" data-grupo="F">
+                    <div class="contenegrupos">
+                        <h2>Grupo F</h2>
+                        <table class="Tablapos">
+
+                            <tr>
+                                <th>GRUPO F</th>
+                                <th>PJ</th>
+                                <th>PG</th>
+                                <th>PE</th>
+                                <th>PP</th>
+                                <th>PTS</th>
+                            </tr>
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderapaisesbajos.jpg" alt="">
+                                    Paises Bajos</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderajapon.jpg" alt="">
+                                    Japón</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderatunez.avif" alt="">
+                                    Túnez</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderablanca.avif" alt="">
+                                    Por determinar</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+
+                <div class="estadio" data-grupo="G">
+                    <div class="contenegrupos">
+                        <h2>Grupo G</h2>
+                        <table class="Tablapos">
+
+                            <tr>
+                                <th>GRUPO G</th>
+                                <th>PJ</th>
+                                <th>PG</th>
+                                <th>PE</th>
+                                <th>PP</th>
+                                <th>PTS</th>
+                            </tr>
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderabelgica.jpg" alt="">
+                                    Bélgica</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderaegipto.avif" alt="">
+                                    Egipto</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderairan.jpg" alt="">
+                                    Irán</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderablanca.avif" alt="">
+                                    Nueva Zelanda</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+
+                <div class="estadio" data-grupo="H">
+                    <div class="contenegrupos">
+                        <h2>Grupo H</h2>
+                        <table class="Tablapos">
+
+                            <tr>
+                                <th>GRUPO H</th>
+                                <th>PJ</th>
+                                <th>PG</th>
+                                <th>PE</th>
+                                <th>PP</th>
+                                <th>PTS</th>
+                            </tr>
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderaespaña.avif" alt="">
+                                    España</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderaisladecaboverde.avif" alt="">
+                                    Islas de Cabo Verde</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderaarabiasaudi.jpg" alt="">
+                                    Arabia Saudita</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderauru.avif" alt="">
+                                    Uruguay</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+
+                <div class="estadio" data-grupo="I">
+                    <div class="contenegrupos">
+                        <h2>Grupo I</h2>
+                        <table class="Tablapos">
+
+                            <tr>
+                                <th>GRUPO I</th>
+                                <th>PJ</th>
+                                <th>PG</th>
+                                <th>PE</th>
+                                <th>PP</th>
+                                <th>PTS</th>
+                            </tr>
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderablanca.avif" alt="">
+                                    Por definir</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderafrancia.jpg" alt="">
+                                    Francia</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderasenegal.jpg" alt="">
+                                    Senegal</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderanoruega.jpg" alt="">
+                                    Noruega</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+
+                <div class="estadio" data-grupo="J">
+                    <div class="contenegrupos">
+                        <h2>Grupo J</h2>
+                        <table class="Tablapos">
+
+                            <tr>
+                                <th>GRUPO J</th>
+                                <th>PJ</th>
+                                <th>PG</th>
+                                <th>PE</th>
+                                <th>PP</th>
+                                <th>PTS</th>
+                            </tr>
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderaargentina.jpg" alt="">
+                                    Argentina</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderaargelia.jpg" alt="">
+                                    Argelia</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderaaustria.jpg" alt="">
+                                    Austria</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderajordania.avif" alt="">
+                                    Jordania</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+
+                <div class="estadio" data-grupo="K">
+                    <div class="contenegrupos">
+                        <h2>Grupo K</h2>
+                        <table class="Tablapos">
+
+                            <tr>
+                                <th>GRUPO K</th>
+                                <th>PJ</th>
+                                <th>PG</th>
+                                <th>PE</th>
+                                <th>PP</th>
+                                <th>PTS</th>
+                            </tr>
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderablanca.avif" alt="">
+                                    Congo</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderaportugal.jpg" alt="">
+                                    Portugal</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderairan.jpg" alt="">
+                                    Uzbekistán</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderacolombia.jfif" alt="">
+                                    Colombia</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+
+                <div class="estadio" data-grupo="L">
+                    <div class="contenegrupos">
+                        <h2>Grupo L</h2>
+                        <table class="Tablapos">
+
+                            <tr>
+                                <th>GRUPO L</th>
+                                <th>PJ</th>
+                                <th>PG</th>
+                                <th>PE</th>
+                                <th>PP</th>
+                                <th>PTS</th>
+                            </tr>
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderainglaterra.jpg" alt="">
+                                    Inglaterra</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderacroacia.jpg" alt="">
+                                    Croacia</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderaghana.avif" alt="">
+                                    Ghana</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                            <tr>
+                                <th class="imagen"><img src="images/banderas/banderapanama.jpg" alt="">
+                                    Panamá</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                                <th>0</th>
+                            </tr>
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+    <footer class="foot">
+        <div class="derechos">
+            <h3>TODOS LOS DERECHOS RESERVADOS - MUNDIAL DE LA FIFA 2026</h3>
+            <p>Developed by Oskar Cuellar</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

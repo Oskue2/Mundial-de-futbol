@@ -1,0 +1,515 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: black
+}
+
+.navegador {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(20, 23, 31, 0.95);
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    padding: 5px 20px;
+    top: 0;
+    
+
+}
+
+.navegador img {
+    background-position: center;
+    background-size: cover;
+    width: 150px;
+}
+
+
+
+.info {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    transition: 03s;
+    padding-right: 20px;
+}
+
+.info a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.3s ease;
+    display: block;
+}
+
+.infos {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.tiempoindi{
+    padding-right: 15px;
+    
+}
+
+.mensa{
+    color: aliceblue;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.regresivo{
+    display: flex;
+    gap: 45px;
+    justify-content: space-between;
+    
+}
+
+nav h2 {
+    color: aliceblue;
+    font-size: 35px;
+}
+
+.indicador{
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    padding: 0px 5px 0px 3px;
+}
+
+.indicador h3{
+    color: aliceblue;
+    font-size: 15px;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    background: rgba(20, 23, 31, 0.95);
+    top: 100%;
+    list-style: none;
+    padding: 20px 40px;
+}
+
+.submenu li {
+    border-bottom: 1px solid white;
+}
+
+.info li:hover .submenu {
+    display: block;
+}
+
+.info {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.info li {
+    position: relative;
+}
+
+.info a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.3s ease;
+    display: block;
+}
+
+.info a:hover {
+    color: #14213d;
+
+}
+
+.Top {
+    color: white;
+    height: 900px;
+    text-align: center;
+    background: url("../images/fotoindex.png") center/cover no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 105px;
+}
+
+.Top h1 {
+    font-size: 70px;
+}
+
+.tiempomundial{
+    align-items: center;
+}
+
+.marca{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px ;
+    gap: 10px;
+
+}
+
+.mid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    gap: 20px;
+
+}
+
+.iz {
+    width: 25%;
+    height: 85%;
+    border-radius: 10px;
+    background: linear-gradient(0deg, #0b0f1a, #05070d);
+    border: 1px #222725 solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.mi {
+    width: 33%;
+    height: 85%;
+    border-radius: 10px;
+    background: linear-gradient(0deg, #0b0f1a, #05070d);
+    border: 1px #222725 solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.der {
+    width: 33%;
+    height: 85%;
+    border-radius: 10px;
+    background: linear-gradient(0deg, #0b0f1a, #05070d);
+    border: 1px #222725 solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    padding-bottom: 20px;
+}
+
+.gen {
+    width: 98%;
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(0deg, #0b0f1a, #05070d);
+    border: 1px #222725 solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contenebot{
+    width: 100%;
+}
+
+.titulo {
+    color: aliceblue;
+    font-size: 16px;
+    padding: 0px 0px 20px 0px;
+    text-align: center;
+
+}
+
+
+
+.contenido {
+    color: aliceblue;
+    text-align: center;
+
+}
+
+.contenido img {
+    width: 140px;
+    height: 80px;
+}
+
+.contenido h1 {
+    color: aliceblue;
+    padding: 20px 0px;
+
+}
+
+.contenido h3 {
+    padding: 20px 0px 10px 0px;
+}
+
+.enfrenta {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    
+}
+
+.botmid {
+    text-align: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    color: aliceblue;
+}
+
+.botmid h5{
+    padding: 5px;
+}
+
+.Tablapos {
+    text-align: left;
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+    font-size: 20px;
+}
+
+.Tablapos th,
+.Tablapos td {
+    border-bottom: 1px solid wheat;
+    padding: 5px;
+}
+
+.imagen img {
+    width: 30px;
+    height: 20px;
+}
+
+.contene {
+    width: 98%;
+    font-size: 25px;
+    text-align: center;
+    color: aliceblue;
+
+}
+
+.titulomi {
+    color: aliceblue;
+    font-size: 16px;
+    padding: 40px 20px 10px 10px;
+    text-align: center;
+
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+}
+
+.botonmid {
+    background: linear-gradient(0deg, #0b0f1a, #05070d);
+    margin: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid gray;
+}
+
+.botonmid a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.3s ease;
+    display: block;
+}
+
+.botonmid a:hover {
+    color: #14213d;
+
+}
+
+.titulode {
+    color: aliceblue;
+    font-size: 16px;
+    text-align: center;
+}
+
+.contenedorder{
+    width: 98%;
+}
+
+.partido {
+    display: flex;
+    background-color: #1b264f;
+    border-radius: 5px;
+    margin: 10px;
+    transition: 0.3s;
+    color: aliceblue;
+}
+
+.partido:hover {
+    transform: translateY(-5px);
+}
+
+.equipos {
+    width: 65%;
+}
+
+.equipo {
+    display: flex;
+    padding: 10px 0px;
+    gap: 10px;
+}
+
+.equipo img {
+    width: 40px;
+    height: 26px;
+    display: flex;
+    justify-content: center;
+}
+
+.goles {
+    padding: 10px 0px;
+}
+
+.tiempo {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tiempo span {
+    color: green;
+}
+
+.card {
+    position: relative;
+    border-radius: 15px;
+}
+
+.linea-tiempo {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    width: 20px;
+    height: 3px;
+    background: green;
+    animation: tiempo 0.8s linear infinite alternate;
+}
+
+@keyframes tiempo {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-30px);
+    }
+}
+
+.titulobot {
+    color: aliceblue;
+    padding: 0px 0px 10px 20px;
+    
+}
+
+.programacion {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    margin-top: 5px;
+    gap: 15px;
+
+}
+
+.encuentros {
+    color: aliceblue;
+    text-align: center;
+    background: #14213d;
+    padding: 10px;
+    width: 32%;
+    height: 80%;
+    transition: 0.3s;
+    border-radius: 5px;
+
+}
+
+.encuentros:hover {
+    transform: translateY(-5px);
+}
+
+.encuentro {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.encuentro img {
+    width: 40px;
+    height: 26px;
+    display: flex;
+}
+
+.encuentroinfo {
+    padding: 10px;
+}
+
+.btncalen {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.btncalendario {
+    background: linear-gradient(0deg, #0b0f1a, #05070d);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid gray;
+}
+
+.btncalendario a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.3s ease;
+    display: block;
+}
+
+.btncalendario a:hover {
+    color: #14213d;
+}
+
+.foot {
+    background: linear-gradient(0deg, #0b0f1a, #05070d);
+    height: 10vh;
+    display: flex;
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+}
+
+.derechos {
+    text-align: center;
+}

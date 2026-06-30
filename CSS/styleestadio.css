@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: black
+}
+
+/* navegador */
+.navegador {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(20, 23, 31, 0.95);
+    align-items: center;
+    width: 100%;
+    z-index: 10;
+    padding: 5px 40px;
+    position: fixed;
+
+}
+
+.navegador img {
+    background-position: center;
+    background-size: cover;
+    width: 150px;
+}
+
+nav h2 {
+    color: aliceblue;
+}
+
+.info {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+
+}
+
+.info a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.3s ease;
+    display: block;
+}
+
+.infos {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background: rgba(15, 23, 42, 0.95);
+    top: 100%;
+    list-style: none;
+    padding: 20px 40px;
+}
+
+.submenu li {
+    border-bottom: 1px solid white;
+}
+
+.info li:hover .submenu {
+    display: block;
+}
+
+.info {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.info li {
+    position: relative;
+}
+
+.info a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.3s ease;
+    display: block;
+}
+
+.info a:hover {
+    color: #14213d;
+
+}
+
+/*MID*/
+.mid {
+    text-align: center;
+
+}
+
+.titulo {
+    text-align: center;
+    color: aliceblue;
+    padding-top: 130px;
+}
+
+.estadios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+    gap: 60px;
+}
+
+.estadio {
+    width: 700px;
+    height: 450px;
+    background: linear-gradient(0deg, #0b0f1a, #05070d);
+    padding: 20px 10px 10px 10px;
+    
+
+}
+
+.estadio img {
+    width: 600px;
+    height: 300px;
+    margin-top: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.informacion {
+    margin-top: 10px;
+}
+
+.estadios a {
+    text-decoration: none;
+    color: aliceblue;
+    transition: 0.3s;
+}
+
+.estadios a:hover {
+    transform: translateY(-5px);
+}
+
+.titulo2 {
+    text-align: center;
+    color: aliceblue;
+
+}
+
+.titulo3 {
+    text-align: center;
+    color: aliceblue;
+
+}
+/* footer*/
+.foot {
+    background: linear-gradient(0deg, #0b0f1a, #05070d);
+    height: 10vh;
+    display: flex;
+    color: aliceblue;
+    align-items: center;
+    justify-content: center;
+}
+
+.derechos {
+    text-align: center;
+}

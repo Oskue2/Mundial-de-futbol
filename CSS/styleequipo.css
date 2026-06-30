@@ -1,0 +1,640 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: black
+}
+
+.navegador {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(20, 23, 31, 0.95);
+    align-items: center;
+    width: 100%;
+    z-index: 10;
+    padding: 5px 40px;
+
+
+}
+
+.navegador img {
+    background-position: center;
+    background-size: cover;
+    width: 150px;
+}
+
+nav h2 {
+    color: aliceblue;
+}
+
+.info {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    transition: 03s;
+
+}
+
+.info a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.3s ease;
+    display: block;
+}
+
+.infos {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background: rgba(15, 23, 42, 0.95);
+    top: 100%;
+    list-style: none;
+    padding: 20px 40px;
+}
+
+.submenu li {
+    border-bottom: 1px solid white;
+}
+
+.info li:hover .submenu {
+    display: block;
+}
+
+.info {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.info li {
+    position: relative;
+}
+
+.info a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.3s ease;
+    display: block;
+}
+
+.info a:hover {
+    color: #0077b6;
+
+}
+
+.mid {
+    color: aliceblue;
+    display: flex;
+    padding: 50px 80px 20px 80px;
+
+}
+
+.selector h2 {
+    padding-bottom: 20px;
+
+
+}
+
+
+.titulocla h3 {
+    padding-top: 30px;
+}
+
+.equipos {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    gap: 25px;
+}
+
+.equipo {
+    width: 360px;
+    height: 320px;
+    background: linear-gradient(0deg, #0b0f1a, #05070d);
+    border-radius: 10px;
+    border: 1px #222725 solid;
+    transition: 0.3s;
+}
+
+.equipo:hover {
+    transform: translatey(-5px);
+}
+
+/*colombia*/
+.img {
+    background: #ffb703;
+    height: 65%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.img img {
+    border-radius: 10px;
+    width: 90px;
+    height: 60px;
+
+}
+
+/*Brasil*/
+.img2 {
+    background: #fb8500;
+    height: 65%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.img2 img {
+    border-radius: 10px;
+    width: 90px;
+    height: 60px;
+
+}
+
+/*Argentina*/
+.img3 {
+    background: #219ebc;
+    height: 65%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.img3 img {
+    border-radius: 10px;
+    width: 90px;
+    height: 60px;
+
+}
+
+/*Ecuador*/
+.img4 {
+    background: #faa307;
+    height: 65%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.img4 img {
+    border-radius: 10px;
+    width: 90px;
+    height: 60px;
+
+}
+
+/*Paraguay*/
+.img5 {
+    background: #d00000;
+    height: 65%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.img5 img {
+    border-radius: 10px;
+    width: 90px;
+    height: 60px;
+
+}
+
+/*Uruguay*/
+.img6 {
+    background: #0077b6;
+    height: 65%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.img6 img {
+    border-radius: 10px;
+    width: 90px;
+    height: 60px;
+
+}
+
+/*Canadá*/
+.img7 {
+    background: #d00000;
+    height: 65%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.img7 img {
+    border-radius: 10px;
+    width: 90px;
+    height: 60px;
+
+}
+
+/*ee uu*/
+.img8 {
+    background: #03045e;
+    height: 65%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.img8 img {
+    border-radius: 10px;
+    width: 90px;
+    height: 60px;
+
+}
+
+/*México*/
+.img9 {
+    background: #006400;
+    height: 65%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.img9 img {
+    border-radius: 10px;
+    width: 90px;
+    height: 60px;
+
+}
+
+/*Curazao*/
+.img10 {
+    background: #0077b6;
+    height: 65%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.img10 img {
+    border-radius: 10px;
+    width: 90px;
+    height: 60px;
+
+}
+
+/*Uruguay*/
+.img11 {
+    background: #001845;
+    height: 65%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.img11 img {
+    border-radius: 10px;
+    width: 90px;
+    height: 60px;
+
+}
+
+/*Panamá*/
+.img12 {
+    background: #d00000;
+    height: 65%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.img12 img {
+    border-radius: 10px;
+    width: 90px;
+    height: 60px;
+
+}
+
+/*Argelia*/
+.img13 {
+    background: #2b9348;
+    height: 65%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.img13 img {
+    border-radius: 10px;
+    width: 90px;
+    height: 60px;
+
+}
+
+/*Costa de Marfil*/
+.img14 {
+    background: #ff6d00;
+    height: 65%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.img14 img {
+    border-radius: 10px;
+    width: 90px;
+    height: 60px;
+
+}
+
+/*Egipto*/
+.img15 {
+    background: #d00000;
+    height: 65%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.img15 img {
+    border-radius: 10px;
+    width: 90px;
+    height: 60px;
+
+}
+
+/*Ghana*/
+.img16 {
+    background: #fdc500;
+    height: 65%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.img16 img {
+    border-radius: 10px;
+    width: 90px;
+    height: 60px;
+
+}
+
+/*Isla de cabo verde*/
+.img17 {
+    background: #003f88;
+    height: 65%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.img17 img {
+    border-radius: 10px;
+    width: 90px;
+    height: 60px;
+
+}
+
+/*Senegal*/
+.img18 {
+    background: #ff9100;
+    height: 65%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.img18 img {
+    border-radius: 10px;
+    width: 90px;
+    height: 60px;
+
+}
+
+/*Túnez*/
+.img19 {
+    background: #c1121f;
+    height: 65%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.img19 img {
+    border-radius: 10px;
+    width: 90px;
+    height: 60px;
+
+}
+
+/*Catar*/
+.img20 {
+    background: #800f2f;
+    height: 65%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.img20 img {
+    border-radius: 10px;
+    width: 90px;
+    height: 60px;
+
+}
+
+/*Jordania*/
+.img21 {
+    background: #c81d25;
+    height: 65%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.img21 img {
+    border-radius: 10px;
+    width: 90px;
+    height: 60px;
+
+}
+
+/*Jordania*/
+.img22 {
+    background: #c52233;
+    height: 65%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.img22 img {
+    border-radius: 10px;
+    width: 90px;
+    height: 60px;
+
+}
+
+/*Jordania*/
+.img23 {
+    background: #252422;
+    height: 65%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.img23 img {
+    border-radius: 10px;
+    width: 90px;
+    height: 60px;
+
+}
+
+/*Jordania*/
+.img24 {
+    background: #d62828;
+    height: 65%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.img24 img {
+    border-radius: 10px;
+    width: 90px;
+    height: 60px;
+
+}
+
+/*Jordania*/
+.img25 {
+    background: #f00808;
+    height: 65%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.img25 img {
+    border-radius: 10px;
+    width: 90px;
+    height: 60px;
+
+}
+
+/*Jordania*/
+.img26 {
+    background: wheat;
+    height: 65%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.img26 img {
+    border-radius: 10px;
+    width: 90px;
+    height: 60px;
+
+}
+
+/*Jordania*/
+.img27 {
+    background: #d00000;
+    height: 65%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.img27 img {
+    border-radius: 10px;
+    width: 90px;
+    height: 60px;
+
+}
+
+/*Jordania*/
+.img28 {
+    background: #e85d04;
+    height: 65%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.img28 img {
+    border-radius: 10px;
+    width: 90px;
+    height: 60px;
+
+}
+
+/*Jordania*/
+.img26 {
+    background: wheat;
+    height: 65%;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.img26 img {
+    border-radius: 10px;
+    width: 90px;
+    height: 60px;
+
+}
+
+.pais {
+    padding-top: 60px;
+    color: #05070d;
+}
+
+.conteneinfo {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infor {
+    gap: 10px;
+    padding: 5px 5px;
+    color: #a2d2ff;
+
+}
+
+.infor2 {
+    gap: 10px;
+    padding: 5px 5px;
+
+}
+
+.informa2 {
+    text-align: end;
+}
+
+.maqueta {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tipos {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    background: rgba(20, 23, 31, 0.95);
+    padding: 4px;
+    border-radius: 999px;
+    width: fit-content;
+}
+
+.btn {
+
+    border: none;
+    background: transparent;
+    color: #aaa;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 6px 16px;
+    border-radius: 999px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.btn:hover {
+    color: #ccd5ae;
+    background: #344e41;
+    
+}
+
+.btn.active {
+    background: #ffffff;
+    color: #000;
+    font-weight: 600;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
