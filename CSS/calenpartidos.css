@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,7 +18,7 @@ body {
     position: fixed;
     padding: 5px 20px;
     top: 0;
-    
+
 
 }
 
@@ -92,5 +92,103 @@ body {
 
 .info a:hover {
     color: #14213d;
+
+}
+
+.gen {
+    width: 98%;
+    height: 500px;
+    border-radius: 10px;
+    background: linear-gradient(0deg, #0b0f1a, #05070d);
+    border: 1px #222725 solid;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+
+}
+
+.contenebot {
+    width: 100%;
+}
+
+.titulobot H2 {
+    padding: 20px 0px 10px 20px;
+
+}
+
+.programacion {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+.encuentros {
+    color: aliceblue;
+    text-align: center;
+    background: #14213d;
+    padding: 10px;
+    width: 32%;
+    height: 80%;
+    transition: 0.3s;
+    border-radius: 5px;
+
+}
+
+.encuentros:hover {
+    transform: translateY(-5px);
+}
+
+.encuentro {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.encuentro img {
+    width: 40px;
+    height: 26px;
+    display: flex;
+}
+
+.encuentroinfo {
+    padding: 10px;
+}
+
+.btncalen {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.btncalendario {
+    background: linear-gradient(0deg, #0b0f1a, #05070d);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid gray;
+}
+
+.btncalendario a {
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.3s ease;
+    display: block;
+}
+
+.btncalendario a:hover {
+    color: #14213d;
+}
+
+.titulobot {
+    color: aliceblue;
+    padding: 0px 0px 10px 20px;
 
 }
