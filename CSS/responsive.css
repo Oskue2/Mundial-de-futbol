@@ -1,0 +1,173 @@
+/* ============================================================
+   Responsive del navegador - compartido por todas las paginas.
+   Se enlaza despues de la hoja propia de cada pagina, por eso
+   puede sobrescribir sin necesidad de !important.
+   ============================================================ */
+
+/* --- Ajustes base, aplican en cualquier tamano --- */
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* style.css era la unica hoja sin z-index en el nav */
+.navegador {
+    z-index: 100;
+}
+
+/* Boton hamburguesa: oculto en escritorio */
+.menu-btn {
+    display: none;
+    background: none;
+    border: 0;
+    padding: 10px;
+    cursor: pointer;
+    line-height: 0;
+}
+
+.menu-btn span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    margin: 5px 0;
+    background: aliceblue;
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+
+/* Las tres barras se vuelven una X al abrir */
+.menu-btn.abierto span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.menu-btn.abierto span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-btn.abierto span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* ============================================================
+   Pantallas medianas: el nav todavia cabe, solo hay que apretarlo
+   ============================================================ */
+@media (max-width: 1300px) {
+    .navegador {
+        padding: 5px 20px;
+    }
+
+    .navegador img {
+        width: 110px;
+    }
+
+    nav h2 {
+        font-size: 20px;
+    }
+
+    .info {
+        gap: 20px;
+        padding-right: 0;
+    }
+
+    .info a {
+        font-size: 17px;
+    }
+}
+
+/* ============================================================
+   Tablet y movil: los enlaces pasan al menu hamburguesa
+   ============================================================ */
+@media (max-width: 1024px) {
+    .menu-btn {
+        display: block;
+    }
+
+    /* El panel se despliega justo debajo de la barra (110px de alto) */
+    .navegador .info {
+        display: none;
+        position: absolute;
+        top: 110px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        gap: 0;
+        padding: 10px 0;
+        background: rgba(20, 23, 31, 0.98);
+        border-top: 1px solid #2a2f3a;
+        max-height: calc(100vh - 110px);
+        overflow-y: auto;
+        z-index: 100;
+    }
+
+    .navegador .info.abierto {
+        display: flex;
+    }
+
+    .info > li {
+        width: 100%;
+    }
+
+    .info > li + li {
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .info a {
+        font-size: 18px;
+        padding: 14px 24px;
+    }
+
+    /* El submenu deja de flotar y se abre en linea */
+    .submenu {
+        position: static;
+        display: none;
+        padding: 0;
+        background: rgba(0, 0, 0, 0.35);
+    }
+
+    /* En tactil el hover no sirve, lo abre el clic */
+    .info li:hover .submenu {
+        display: none;
+    }
+
+    .info li.abierto > .submenu {
+        display: block;
+    }
+
+    .submenu li {
+        border-bottom: 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .submenu a {
+        padding-left: 44px;
+        font-weight: 500;
+    }
+
+    nav h2 {
+        font-size: 18px;
+    }
+}
+
+/* ============================================================
+   Celular
+   ============================================================ */
+@media (max-width: 560px) {
+    .navegador {
+        padding: 5px 12px;
+    }
+
+    .navegador img {
+        width: 80px;
+    }
+
+    nav h2 {
+        font-size: 15px;
+    }
+}

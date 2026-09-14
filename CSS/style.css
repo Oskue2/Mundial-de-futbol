@@ -514,3 +514,131 @@ nav h2 {
 .derechos {
     text-align: center;
 }
+/* ============================================================
+   Responsive
+   ============================================================ */
+@media (max-width: 1024px) {
+    .Top {
+        height: 60vh;
+        min-height: 380px;
+    }
+
+    .Top h1 {
+        font-size: 44px;
+    }
+
+    .mid {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 20px 15px;
+        gap: 15px;
+    }
+
+    .iz,
+    .mi,
+    .der {
+        width: 100%;
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .bot {
+        height: auto;
+        padding: 0 15px 20px 15px;
+    }
+
+    .gen {
+        height: auto;
+        padding: 15px 0;
+    }
+
+    .encuentros {
+        width: 47%;
+    }
+}
+
+@media (max-width: 700px) {
+    .Top {
+        height: 45vh;
+        min-height: 260px;
+        margin-top: 110px;
+    }
+
+    .Top h1 {
+        font-size: 30px;
+    }
+
+    .titulo,
+    .titulomi,
+    .titulode {
+        padding: 10px 5px;
+    }
+
+    .contenido img {
+        width: 90px;
+        height: 55px;
+    }
+
+    .contenido h1 {
+        font-size: 22px;
+        padding: 10px 0;
+    }
+
+    .botmid h3 {
+        font-size: 15px;
+    }
+
+    .botmid h5 {
+        font-size: 11px;
+    }
+
+    .Tablapos {
+        font-size: 13px;
+    }
+
+    .Tablapos th,
+    .Tablapos td {
+        padding: 4px 2px;
+    }
+
+    .contene {
+        font-size: 18px;
+    }
+
+    .botonmid {
+        width: 100%;
+        max-width: 300px;
+        margin: 12px 0;
+    }
+
+    .encuentros {
+        width: 100%;
+    }
+
+    .equipo img {
+        width: 30px;
+        height: 20px;
+    }
+
+    .partido {
+        font-size: 13px;
+    }
+
+    .titulobot {
+        padding: 0 0 10px 10px;
+    }
+
+    .foot {
+        height: auto;
+        min-height: 10vh;
+        padding: 18px 15px;
+    }
+
+    .derechos h3 {
+        font-size: 14px;
+    }
+
+    .derechos p {
+        font-size: 12px;
+    }
+}

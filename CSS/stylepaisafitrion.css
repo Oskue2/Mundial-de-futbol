@@ -102,6 +102,7 @@ nav h2 {
     justify-content: center;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .titulo {
@@ -119,40 +120,46 @@ nav h2 {
 }
 
 .estadio {
-    width: 800px;
-    height: 560px;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
     background: linear-gradient(0deg, #0b0f1a, #05070d);
     padding: 20px 10px 10px 10px;
     border-radius: 20px;
 }
 
 .estadio2 {
-    width: 700px;
-    height: 400px;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
     background: linear-gradient(0deg, #0b0f1a, #05070d);
     padding: 20px 10px 10px 10px;
     border-radius: 10px;
 }
 
 .estadio3 {
-    width: 700px;
-    height: 330px;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
     background: linear-gradient(0deg, #0b0f1a, #05070d);
     padding: 20px 10px 10px 10px;
     border-radius: 10px;
 }
 
 .estadio4 {
-    width: 700px;
-    height: 430px;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
     background: linear-gradient(0deg, #0b0f1a, #05070d);
     padding: 20px 10px 10px 10px;
     border-radius: 20px;
 }
 
 .estadio img {
-    width: 700px;
-    height: 400px;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    aspect-ratio: 7 / 4;
     margin-top: 20px;
     background-size: cover;
     background-position: center;
@@ -272,4 +279,53 @@ nav h2 {
 
 .derechos{
     text-align: center;
+}
+
+/* ============================================================
+   Responsive
+   ============================================================ */
+@media (max-width: 1024px) {
+    .estadios {
+        padding: 40px 15px 0 15px;
+    }
+
+    .titulobot {
+        padding: 20px 0 5px 15px;
+    }
+
+    .programacion {
+        margin: 10px 0;
+    }
+
+    .encuentros {
+        width: 47%;
+    }
+}
+
+@media (max-width: 700px) {
+    .estadio,
+    .estadio2,
+    .estadio3,
+    .estadio4 {
+        padding: 15px 10px 10px 10px;
+        border-radius: 12px;
+    }
+
+    .informacions {
+        padding: 0 5px;
+    }
+
+    .encuentros {
+        width: 100%;
+    }
+
+    .bot {
+        padding: 20px 10px;
+    }
+
+    .foot {
+        height: auto;
+        min-height: 10vh;
+        padding: 18px 15px;
+    }
 }

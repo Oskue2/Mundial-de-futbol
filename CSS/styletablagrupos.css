@@ -129,8 +129,10 @@ nav h2 {
 }
 
 .estadio {
-    width: 700px;
-    height: 400px;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    min-height: 400px;
     background: linear-gradient(0deg, #0b0f1a, #05070d);
     transition: 0.3s;
     display: flex;
@@ -140,6 +142,7 @@ nav h2 {
 
 .tipos {
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
     list-style: none;
     background: rgba(20, 23, 31, 0.95);
@@ -189,8 +192,10 @@ nav h2 {
 }
 
 .estadio img {
-    width: 600px;
-    height: 300px;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    aspect-ratio: 2 / 1;
     margin-top: 20px;
     background-size: cover;
     background-position: center;
@@ -253,4 +258,63 @@ nav h2 {
 
 .derechos {
     text-align: center;
+}
+/* ============================================================
+   Responsive
+   ============================================================ */
+@media (max-width: 1024px) {
+    .mid {
+        padding: 10px 20px 20px 20px;
+    }
+
+    .estadios {
+        padding: 25px 0;
+        gap: 30px;
+    }
+
+    .tipos {
+        margin: 25px 10px 10px 10px;
+        gap: 8px;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .mid {
+        padding: 10px 12px 20px 12px;
+    }
+
+    .titulo {
+        padding-top: 130px;
+        font-size: 15px;
+    }
+
+    .estadio {
+        min-height: 0;
+        padding: 15px 5px;
+    }
+
+    .contenegrupos {
+        width: 100%;
+    }
+
+    .Tablapos {
+        font-size: 13px;
+    }
+
+    .Tablapos th,
+    .Tablapos td {
+        padding: 4px 2px;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    .foot {
+        height: auto;
+        min-height: 10vh;
+        padding: 18px 15px;
+    }
 }

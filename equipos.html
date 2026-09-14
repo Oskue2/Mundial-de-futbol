@@ -7,6 +7,8 @@
     <title>Equipos</title>
     <link rel="stylesheet" href="CSS/styleequipo.css">
     <script src="JS/script.js"></script>
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <script src="JS/nav.js" defer></script>
 </head>
 
 <body>
@@ -15,7 +17,12 @@
             <div class="infos">
                 <img src="images/logo.png" alt="">
             </div>
-            <ul class="info">
+            <button class="menu-btn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu-principal">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="info" id="menu-principal">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="anfitriones.html">Anfitriones</a></li>
                 <li><a href="estadios.html">Estadios</a></li>
