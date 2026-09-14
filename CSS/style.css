@@ -434,7 +434,7 @@ nav h2 {
 .programacion {
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 5px;
     gap: 15px;

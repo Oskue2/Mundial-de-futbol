@@ -99,7 +99,7 @@ img {
         flex-direction: column;
         gap: 0;
         padding: 10px 0;
-        background: rgba(20, 23, 31, 0.98);
+        background: #14171f;
         border-top: 1px solid #2a2f3a;
         max-height: calc(100vh - 110px);
         overflow-y: auto;
@@ -168,6 +168,20 @@ img {
     }
 
     nav h2 {
+        font-size: 15px;
+    }
+}
+
+/* ============================================================
+   Tarjetas de encuentro: el markup se repite en 4 hojas, asi que
+   el ajuste va aca una sola vez.
+   ============================================================ */
+@media (max-width: 700px) {
+    .encuentro {
+        flex-wrap: wrap;
+    }
+
+    .encuentro h3 {
         font-size: 15px;
     }
 }

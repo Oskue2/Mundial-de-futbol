@@ -150,6 +150,8 @@ h1 {
 
 .anfitrion a{
     text-decoration: none;
+    width: 100%;
+    max-width: 550px;
 }
 /* ============================================================
    Responsive
