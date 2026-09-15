@@ -7,6 +7,7 @@
 /* --- Ajustes base, aplican en cualquier tamano --- */
 html {
     -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
 }
 
 body {
